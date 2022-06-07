@@ -7,7 +7,7 @@ Aun se encontrandose en fase de desarrollo se plantea dotar al codigo de mayores
 
 ## Screenshot
 
-![image](./carritoCompras-VanillaJS.gif)
+![image text](./carritoCompras-VanillaJS.gif)
 
 ## Instalacion
 
