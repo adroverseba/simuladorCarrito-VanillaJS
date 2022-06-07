@@ -1,0 +1,38 @@
+[
+  {
+    "precio": 36000,
+    "id": 1,
+    "title": "Monitor Samsung Oddyssey G3",
+    "thumbnailUrl": "https://www.tradeinn.com/f/13804/138049368/samsung-monitor-odyssey-f27g35tfwux-27-full-hd-led.jpg"
+  },
+  {
+    "precio": 12000,
+    "id": 2,
+    "title": "Sony Mando DualSense PS5",
+    "thumbnailUrl": "https://www.tradeinn.com/f/13776/137769823/sony-mando-dualsense-ps5.jpg"
+  },
+  {
+    "precio": 104000,
+    "id": 3,
+    "title": "Pc Gamer Armada Amd Ryzen 5 5600g 16gb Ddr4 Hd ",
+    "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_747787-MLA47187605540_082021-F.webp"
+  },
+  {
+    "precio": 142999,
+    "id": 4,
+    "title": "Lavarropas LG Carga Frontal - Capacidad 8.5Kg",
+    "thumbnailUrl": "https://www.lg.com/ar/images/lavarropas/MD05962336/gallery/medium01.jpg"
+  },
+  {
+    "precio": 259999,
+    "id": 5,
+    "title": "Heladera Whirlpool No Frost Xpert Inverter de 462 litros ",
+    "thumbnailUrl": "https://whirlpoolarg.vteximg.com.br/arquivos/ids/162769-1000-1000/frente-principal-min.jpg?v=637819994165270000"
+  },
+  {
+    "precio": 30999,
+    "id": 6,
+    "title": "Cafetera express Peabody CE15003R ",
+    "thumbnailUrl": "https://images.fravega.com/f1000/fea7e4ea9379be9f3781a73380c02e81.jpg"
+  }
+]
