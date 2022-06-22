@@ -5,6 +5,7 @@ const templateCard = document.getElementById("template-card").content;
 const templateFooter = document.getElementById("template-footer").content;
 const templateCart = document.getElementById("template-cart").content;
 const fragment = document.createDocumentFragment();
+const cartBadge = document.querySelector("nav .badge-cart-bar");
 let cart = {};
 
 // configuro un evento para que se dispare cuando el doc html a sido completamente cargado
@@ -52,7 +53,7 @@ const printCards = (data) => {
     fragment.appendChild(cloneNode);
   });
   cards.appendChild(fragment);
-  console.log(fragment);
+  // console.log(fragment);
 };
 
 const addCart = (e) => {
@@ -81,6 +82,7 @@ const setCart = (objeto) => {
 
   printCart();
   // console.log(Object.keys(cart));
+  // console.log(cart);
 };
 
 const printCart = () => {
@@ -112,6 +114,7 @@ const printFooter = () => {
     footer.innerHTML = `
     <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
     `;
+    cartBadge.textContent = "";
     return;
   }
 
@@ -126,6 +129,7 @@ const printFooter = () => {
 
   templateFooter.querySelectorAll("td")[0].textContent = nCantidad;
   templateFooter.querySelector("span").textContent = nPrecio;
+  cartBadge.textContent = nCantidad;
 
   const clone = templateFooter.cloneNode(true);
   fragment.appendChild(clone);
