@@ -137,8 +137,49 @@ const printFooter = () => {
 
   const btnDelete = document.getElementById("vaciar-carrito");
   btnDelete.addEventListener("click", () => {
-    cart = {};
-    printCart();
+    swal
+      .fire({
+        title: "Desea eliminar todos los productos del carrito?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "si, seguro",
+        cancelButtonText: "no, no quiero",
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          swal.fire({
+            title: "Productos Borrados",
+            icon: "success",
+            text: "Los productos han sido eliminados exitosamente del carrito",
+          });
+          cart = {};
+          printCart();
+        }
+      });
+  });
+
+  const btnBuy = document.getElementById("comprar-carrito");
+  btnBuy.addEventListener("click", () => {
+    swal
+      .fire({
+        title: "Desea Comprar Todos los Productos? ",
+        icon: "warning",
+        showCancelButton: true,
+        text: ` Usted esta pagando $${nPrecio}`,
+        confirmButtonText: "si",
+        cancelButtonText: "no, gracias",
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          swal.fire({
+            title: "Compra Exitosa",
+            icon: "success",
+            text: "Su compra a sido realizada con exito. Muchas gracias y vuelvas prontoos",
+          });
+          cart = {};
+          printCart();
+        }
+      });
   });
 };
 
