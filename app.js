@@ -195,6 +195,12 @@ const btnAction = (e) => {
   if (e.target.classList.contains("btn-danger")) {
     cart[e.target.dataset.id].cantidad--;
     if (cart[e.target.dataset.id].cantidad == 0) {
+      Swal.fire({
+        icon: "success",
+        title: "Producto Eliminado",
+        showConfirmButton: false,
+        timer: 1500,
+      });
       delete cart[e.target.dataset.id];
     }
     printCart();
