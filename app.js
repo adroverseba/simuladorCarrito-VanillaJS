@@ -60,6 +60,17 @@ const addCart = (e) => {
   // console.log(e.target);
   // console.log(e.target.classList.contains("btn-dark"));
   if (e.target.classList.contains("btn-dark")) {
+    Toastify({
+      text: "producto agregado al carrito",
+      duration: 1000,
+      gravity: "bottom",
+      position: "right",
+      stopOnFocus: false,
+      style: {
+        background: "#e42729",
+      },
+    }).showToast();
+
     setCart(e.target.parentElement);
   }
   e.stopPropagation();
